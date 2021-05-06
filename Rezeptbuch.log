@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2021.4.29)  6 MAY 2021 16:21
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2021.4.29)  6 MAY 2021 17:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1194,9 +1194,9 @@ Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )
 \verbatim@out=\write5
-runsystem(touch w18-test-202156981.tex)...executed.
+runsystem(touch w18-test-2021561021.tex)...executed.
 
-runsystem(rm -f w18-test-202156981.tex)...executed.
+runsystem(rm -f w18-test-2021561021.tex)...executed.
 
 runsystem(rm -f "Rezeptbuch.gnuploterrors")...executed.
 
@@ -2387,8 +2387,8 @@ Package logreq Info: Writing requests to 'Rezeptbuch.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  55130 strings out of 477299
- 1215852 string characters out of 5838338
- 2404296 words of memory out of 5000000
+ 1215854 string characters out of 5838338
+ 2404308 words of memory out of 5000000
  73868 multiletter control sequences out of 15000+600000
  411514 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
