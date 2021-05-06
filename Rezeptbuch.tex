@@ -1,0 +1,213 @@
+\documentclass[twoside=true, DIV=16, 11pt,a4paper]{scrreprt}
+\usepackage{cuisine}
+\input{~/Vorlagen/template}
+\input{~/Vorlagen/seitenstil-reprt}
+\chead*{Rezepte}
+
+\renewcommand*{\recipefont}{\slshape\ttfamily}
+\renewcommand*{\recipenumberfont}{\Large\ttfamily\itshape}
+\renewcommand*{\recipetitlefont}{\Large\ttfamily\itshape}
+%\renewcommand*{\recipeservingsfont}{\bfseries\itshape\ttfamily}
+%\renewcommand*{\recipetimefont}{\bfseries\itshape\ttfamily}
+%\renewcommand*{\recipestepnumberfont}{\itshape\bfseries}
+%\renewcommand*{\recipequantityfont}{\ttfamily}
+%\renewcommand*{\recipeunitfont}{\ttfamily\slshape}
+
+\newenvironment{srecipe}[3]{
+	\addcontentsline{toc}{section}{#1}
+	\begin{recipe}{#1}{#2}{#3}
+}{
+	\end{recipe}
+}
+
+\begin{document}
+	\tableofcontents
+	\chapter{Kuchen}
+	\ohead*{Kuchen}
+	\begin{srecipe}{Fantawaffeln}{4 Portionen}{15 Minuten}
+		\ing[300]{g}{Mehl}
+		\ing[150]{g}{Zucker}
+		\ing[\fr{1}{2}]{TL}{Backpulver}
+		\ing[1]{Pkg.}{Vanillezucker}
+		Alle trockenen Zutaten miteinander vermengen.
+		\ing[3]{}{Eier}
+		\ing[175]{ml}{Öl}
+		\ing[200]{ml}{Fanta}
+		Dann die weiteren Zutaten hinzufügen und mit dem Mixer verrühren.
+		\newstep
+		Schließlich normal im Waffeleisen backen.
+	\end{srecipe}
+	\begin{srecipe}{Fantakuchen mit Schmand und Früchten}{Backblech}{1 Stunde}
+		\ing[5]{}{Eier}
+		\ing[300]{g}{Zucker}
+		\ing[1]{Pkg.}{Vanillezucker}
+		Eier und (Vanille-)Zucker schaumig rühren.
+		\ing[350]{g}{Mehl}
+		\ing[1]{Pkg.}{Backpulver}
+		Als nächstes Mehl und Backpulver unterrühren.
+		\ing[125]{ml}{Öl}
+		\ing[175]{ml}{Fanta}
+		Öl und Fanta zugießen und erneut rühren.
+		\newstep
+		Auf dem Backblech für 25 Minuten bei 150\0C backen.
+		\ing[600]{g}{Schlagsahne}
+		\ing[3]{Pkg.}{Vanillezucker}
+		\ing[3]{Pkg.}{Sahnesteif}
+		Die Sahne mit Vanillezucker und Sahnesteif aufschlagen.
+		\ing[500]{g}{Schmand}
+		\ing[2]{Pkg.}{Vanillezucker}
+		\ing{}{Früchte}
+		Den Schmand mit dem Vanillezucker mischen und unter die Sahne unterheben.
+		\newstep
+		Die Masse auf den abgekühlten Kuchen geben und die Früchte darauf verteilen.
+	\end{srecipe}
+	\begin{srecipe}{Lebkuchenteig zum ausstechen}{1 Portion}{ein paar Minuten}
+		\ing[600]{g}{Honig}
+		Den Honig im Wasserbad flüssig werden lassen.
+		\ing[200]{g}{Zucker}
+		\ing[2]{}{Eier}
+		\ing[200]{g}{Butter}
+		Zucker mit Eier schaumig schlagen, dann weiche Butter hinzumengen.
+		\ing[1200]{g}{Mehl}
+		\ing[1]{Pkg.}{Backpulver}
+		Mehl und Backpulver in einer zweiten Schüssel vermengen.
+		\ing[1]{Pkg.}{Lebkuchengewürz}
+		\ing[35]{g}{Kakao}
+		Eimasse, Honig, Lebkuchengewürz und Kakao zu einem Teig verrühren.
+		\newstep
+		Teig ausrollen und ausstechen.
+	\end{srecipe}
+	\begin{srecipe}{American Brownies}{1 Blech}{40 Minuten}
+		Den Backofen auf 180\0C vorheizen.
+		\newstep
+		\ing[400]{g}{Zartbitterschokolade}
+		\ing[240]{g}{Butter}
+		Schokolade und Butter zusammen schmelzen.
+		\ing[240]{g}{Mehl}
+		\ing[1]{TL}{Backpulver}
+		\ing[\fr12]{TL}{Salz}
+		Mehl mit Backpulver und Salz mischen.
+		\ing[6]{}{Eier}
+		\ing[420]{g}{Zucker}
+		\ing[2]{TL}{Vanillezucker}
+		Eier mit dem (Vanille-)Zucker schaumig schlagen und die lauwarme Schokoladenmasse hinzumengen
+		\newstep
+		Die Mehlmischung nach und nach hinzufügen und einrühren.
+		\ing[60]{g}{Schokolade, bunt}
+		\ing{einige}{gehackte Nüsse}
+		Die gestückelte Schokolade und die gehackten Nüsse hinzufügen.
+		\newstep
+		Den Teig für etwa 20 Minuten in den auf 180\0C vorgeheizten Backofen backen.
+	\end{srecipe}
+	\chapter{Brot}
+	\ohead*{Brot}
+	\begin{srecipe}{Bananenbrot}{400g/1 Brot}{45 Minuten}
+		Den Backofen auf 180\0C vorheizen.
+		\ing[150]{g}{Dinkelmehl}
+		\ing[50]{g}{Haferflocken}
+		\ing[1]{TL}{Zimtpulver}
+		\ing[1]{Prise}{Salz}
+		\ing[1]{Pkg.}{Backpulver}
+		Mehl, Haferflocken, Zimt, Salz und Backpulver in einer Schüssel zusammenmischen.
+		\ing[3]{}{Bananen}
+		\ing[150]{g}{Apfelmus}
+		\ing[1]{}{Ei}
+		Bananen, Apfelmus und Ei in einer Schüssel mixen. Anschließend gründlich mit der Mehlmischung vermischen.
+		\ing[50]{g}{gehackte Nüsse}
+		Zuletzt die gehackten Nüsse untermengen.
+		\newstep eine Form geben und nach Belieben mit Nüssen oder Haferflocken bestreuen. Im Backofen bei 180\0C für 35 Minuten backen.
+		\newstep
+		Das Brot erst nach dem Abkühlen aus der Form lösen.
+	\end{srecipe}
+	\chapter{Kochen}
+	\ohead*{Kochen}
+	\begin{srecipe}{Schilli-Con-Carne}{4 Personen}{45 Minuten}
+		\ing[2]{Tassen}{Reis}
+		\ing[4]{Tassen}{Wasser}
+		\ing[1]{Tl}{Salz}
+		Reis und gesalzenes Wasser in einem Topf geben, Deckel drauf und volle Hitze! - Schon weitermachen; wenn das Wasser kocht, Platte ausschalten und Deckel drauflassen, die Restwärme reicht, um den Reis zu garen.
+		\ing[500]{g}{Hackfleisch}
+		\ing{}{Margarine}
+		\ing{}{Knoblauch}
+		Das Hackfleisch mit Knoblauch anbraten.
+		\ing{}{Salz}
+		\ing{}{Pfeffer}
+		\ing{}{Pepperoni o.ä.}
+		Das Fleisch schon einmal würzen, irgendetwas scharfes dazu tun. Herdplatte nur noch auf halbe Hitze.
+		\ing[1]{Dose}{Mais}
+		\ing[1]{Dose}{rote oder grüne Bohnen}
+		Wenn das Fleisch gar ist, das Gemüse mit einem Sieb abtropfen und in die Pfanne schmeissen.
+		\ing[2-3]{Tassen}{Wasser}
+		\ing[1-2]{Tl}{Brühe}
+		\ing[\fr{1}{3}]{Tube}{Tomatenmark}
+		Wasser hinzufügen, Brühe einrühren und Tomatenmark hinzugeben.
+		\ing[1-3]{El}{Mehl}
+		Um die Sosse anzudicken nach und nach etwas Mehl hinzugeben und schnell einrühren um Klumpen zu vermeiden bis eine angenehme Konsistenz erreicht ist.
+		\newstep
+		Wenn der Reis alles Wasser aufgenommen hat, ist er fertig.
+	\end{srecipe}
+	\begin{srecipe}{Cartoffelcurry mit grünen Bohnen}{4 Portionen}{45 Minuten}
+		\ing[1]{Kg}{Kartoffeln}
+		\ing[500]{g}{grüne Bohnen}
+		Kartoffeln schälen, waschen und in dicke Scheiben schneiden. Die Bohnen waschen und in ca. 2.5cm große Stücke schneiden.
+		\ing[2]{EL}{Butter}
+		\ing[6]{EL}{Öl}
+		Butter und Öl in einer Pfanne erhitzen.
+		\ing[4]{}{Chilis}
+		\ing[1]{TL}{Kreuzkümmel}
+		\ing[1]{TL}{Kurkuma}
+		\ing[2]{Zehen}{Knoblauch}
+		Die Gewürze für 30 Sekunden in die Pfanne geben.
+		\ing{}{Salz}
+		Die Kartoffeln hinzufügen, salzen, rühren und für 15 Minuten dünsten.
+		\newstep
+		Schließlich die Bohnen hinzufügen und für weitere 15 Minuten bei mittlerer Hitze dünsten.
+	\end{srecipe}
+	\begin{srecipe}{Burritos}{4 Portionen}{1 \fr{1}{4} Stunde}
+		\ing[1]{TL}{Salz}
+		\ing[1]{TL}{Kreuzkümmel}
+		\ing[1]{TL}{Cayennpfeffer}
+		\ing[1]{TL}{Paprikapulver, edelsüß}
+		\ing[\fr12]{TL}{Chiliflocken}
+		\ing{}{gehackten Knoblauch}
+		\ing[2]{EL}{Olivenöl}
+		Für die Gewürzmarinade die Gewürze und das Öl in einer Schale verrühren und ziehen lassen.
+		\ing[600]{g}{Hackfleisch}
+		\ing{}{Olivenöl}
+		\ing[1]{}{Zwiebel}
+		\ing[2]{}{Chilischoten}
+		Das Hackfleisch mit dem Öl anbraten und Zwiebeln und Chili hinzufügen.
+		\newstep
+		Die Gewürzmarinade hinzufügen und kurz anrösten.
+		\ing[280]{g}{Mais}
+		\ing[320]{g}{Kidneybohnen}
+		\ing[1]{TL}{Pfeffer}
+		Mais und Bohnen hinzufügen und mit Pfeffer würzen.
+		\ing[8]{}{Wraps}
+		\ing[200]{g}{Feta}
+		\ing{etw.}{Cheddarkäse, gerieben}
+		Die Wraps mit dem Hackfleisch und dem Käse füllen
+	\end{srecipe}
+	\begin{srecipe}{Zucchini - Gnocchi - Auflauf}{4 Portionen}{1 Stunde}
+		\ing[4]{}{Tomaten}
+		\ing[2]{}{Zucchini}
+		\ing[2]{}{Zwiebeln}
+		Die Gemüsen waschen und schneiden.
+		\ing[etw.]{}{Öl}
+		\ing[2]{Zehen}{Knoblauch}
+		\ing[400]{g}{Hackfleisch}
+		\ing[etw.]{}{Kräuter}
+		Das Hackfleisch mit dem Knoblauch in dem Öl anbraten und die Kräuter hinzufügen.
+		\ing[1]{Dose}{Tomaten}
+		\ing[100]{ml}{Sahne}
+		Die Dosentomaten mit der Sahne mischen und zusammen mit den Tomaten in die Pfanne geben.
+		\newstep
+		Den Ofen auf 180\0C vorheizen
+		\newstep
+		Abwechselnd Gnocchis und Hackfleischmischung in eine Auflaufform schichten.
+		\newstep
+		Den Auflauf für 30 Minuten Backen
+		\ing[viel]{}{Käse, gerieben}
+		Den Auflauf mit Käse bestreuen und weitere 15 Minuten Backen.
+	\end{srecipe}
+\end{document}
