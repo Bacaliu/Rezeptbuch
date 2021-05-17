@@ -5,11 +5,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Fantawaffeln}{2}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Fantakuchen mit Schmand und Früchten}{2}{r@cipenumber.1}%
+\contentsline {section}{Fantakuchen}{2}{r@cipenumber.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Lebkuchenteig zum ausstechen}{2}{r@cipenumber.2}%
+\contentsline {section}{Lebkuchenteig (Ausstechen)}{3}{r@cipenumber.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{American Brownies}{3}{r@cipenumber.3}%
+\contentsline {section}{Brownies}{3}{r@cipenumber.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Brot}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -19,10 +19,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Schilli-Con-Carne}{5}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Cartoffelcurry mit grünen Bohnen}{5}{r@cipenumber.6}%
+\contentsline {section}{Kartoffelcurry mit grünen Bohnen}{6}{r@cipenumber.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Burritos}{6}{r@cipenumber.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Zucchini - Gnocchi - Auflauf}{6}{r@cipenumber.8}%
+\contentsline {section}{Zucchini-Gnocchi-Auflauf}{6}{r@cipenumber.8}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

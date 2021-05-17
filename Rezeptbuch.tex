@@ -13,18 +13,12 @@
 %\renewcommand*{\recipequantityfont}{\ttfamily}
 %\renewcommand*{\recipeunitfont}{\ttfamily\slshape}
 
-\newenvironment{srecipe}[3]{
-	\addcontentsline{toc}{section}{#1}
-	\begin{recipe}{#1}{#2}{#3}
-}{
-	\end{recipe}
-}
-
 \begin{document}
 	\tableofcontents
 	\chapter{Kuchen}
 	\ohead*{Kuchen}
-	\begin{srecipe}{Fantawaffeln}{4 Portionen}{15 Minuten}
+	\addcontentsline{toc}{section}{Fantawaffeln}
+	\begin{recipe}{Fantawaffeln}{4 Portionen}{15 Minuten}
 		\ing[300]{g}{Mehl}
 		\ing[150]{g}{Zucker}
 		\ing[\fr{1}{2}]{TL}{Backpulver}
@@ -36,8 +30,9 @@
 		Dann die weiteren Zutaten hinzufügen und mit dem Mixer verrühren.
 		\newstep
 		Schließlich normal im Waffeleisen backen.
-	\end{srecipe}
-	\begin{srecipe}{Fantakuchen mit Schmand und Früchten}{Backblech}{1 Stunde}
+	\end{recipe}\vfill
+	\addcontentsline{toc}{section}{Fantakuchen}
+	\begin{recipe}{Fantakuchen mit Schmand und Früchten}{Backblech}{1 Stunde}
 		\ing[5]{}{Eier}
 		\ing[300]{g}{Zucker}
 		\ing[1]{Pkg.}{Vanillezucker}
@@ -60,8 +55,10 @@
 		Den Schmand mit dem Vanillezucker mischen und unter die Sahne unterheben.
 		\newstep
 		Die Masse auf den abgekühlten Kuchen geben und die Früchte darauf verteilen.
-	\end{srecipe}
-	\begin{srecipe}{Lebkuchenteig zum ausstechen}{1 Portion}{ein paar Minuten}
+	\end{recipe}
+	\clearpage
+	\addcontentsline{toc}{section}{Lebkuchenteig (Ausstechen)}
+	\begin{recipe}{Lebkuchenteig zum ausstechen}{1 Portion}{ein paar Minuten}
 		\ing[600]{g}{Honig}
 		Den Honig im Wasserbad flüssig werden lassen.
 		\ing[200]{g}{Zucker}
@@ -76,8 +73,9 @@
 		Eimasse, Honig, Lebkuchengewürz und Kakao zu einem Teig verrühren.
 		\newstep
 		Teig ausrollen und ausstechen.
-	\end{srecipe}
-	\begin{srecipe}{American Brownies}{1 Blech}{40 Minuten}
+	\end{recipe}\vfill
+	\addcontentsline{toc}{section}{Brownies}
+	\begin{recipe}{American Brownies}{1 Blech}{40 Minuten}
 		Den Backofen auf 180\0C vorheizen.
 		\newstep
 		\ing[400]{g}{Zartbitterschokolade}
@@ -98,10 +96,11 @@
 		Die gestückelte Schokolade und die gehackten Nüsse hinzufügen.
 		\newstep
 		Den Teig für etwa 20 Minuten in den auf 180\0C vorgeheizten Backofen backen.
-	\end{srecipe}
+	\end{recipe}
 	\chapter{Brot}
 	\ohead*{Brot}
-	\begin{srecipe}{Bananenbrot}{400g/1 Brot}{45 Minuten}
+	\addcontentsline{toc}{section}{Bananenbrot}
+	\begin{recipe}{Bananenbrot}{400g/1 Brot}{45 Minuten}
 		Den Backofen auf 180\0C vorheizen.
 		\ing[150]{g}{Dinkelmehl}
 		\ing[50]{g}{Haferflocken}
@@ -118,10 +117,11 @@
 		\newstep eine Form geben und nach Belieben mit Nüssen oder Haferflocken bestreuen. Im Backofen bei 180\0C für 35 Minuten backen.
 		\newstep
 		Das Brot erst nach dem Abkühlen aus der Form lösen.
-	\end{srecipe}
+	\end{recipe}
 	\chapter{Kochen}
 	\ohead*{Kochen}
-	\begin{srecipe}{Schilli-Con-Carne}{4 Personen}{45 Minuten}
+	\addcontentsline{toc}{section}{Schilli-Con-Carne}
+	\begin{recipe}{Schilli-Con-Carne}{4 Personen}{45 Minuten}
 		\ing[2]{Tassen}{Reis}
 		\ing[4]{Tassen}{Wasser}
 		\ing[1]{Tl}{Salz}
@@ -145,8 +145,10 @@
 		Um die Sosse anzudicken nach und nach etwas Mehl hinzugeben und schnell einrühren um Klumpen zu vermeiden bis eine angenehme Konsistenz erreicht ist.
 		\newstep
 		Wenn der Reis alles Wasser aufgenommen hat, ist er fertig.
-	\end{srecipe}
-	\begin{srecipe}{Cartoffelcurry mit grünen Bohnen}{4 Portionen}{45 Minuten}
+	\end{recipe}
+	\clearpage
+	\addcontentsline{toc}{section}{Kartoffelcurry mit grünen Bohnen}
+	\begin{recipe}{Kartoffelcurry mit grünen Bohnen}{4 Portionen}{45 Minuten}
 		\ing[1]{Kg}{Kartoffeln}
 		\ing[500]{g}{grüne Bohnen}
 		Kartoffeln schälen, waschen und in dicke Scheiben schneiden. Die Bohnen waschen und in ca. 2.5cm große Stücke schneiden.
@@ -162,8 +164,9 @@
 		Die Kartoffeln hinzufügen, salzen, rühren und für 15 Minuten dünsten.
 		\newstep
 		Schließlich die Bohnen hinzufügen und für weitere 15 Minuten bei mittlerer Hitze dünsten.
-	\end{srecipe}
-	\begin{srecipe}{Burritos}{4 Portionen}{1 \fr{1}{4} Stunde}
+	\end{recipe}\vfill
+	\addcontentsline{toc}{section}{Burritos}
+	\begin{recipe}{Burritos}{4 Portionen}{1 \fr{1}{4} Stunde}
 		\ing[1]{TL}{Salz}
 		\ing[1]{TL}{Kreuzkümmel}
 		\ing[1]{TL}{Cayennpfeffer}
@@ -187,8 +190,9 @@
 		\ing[200]{g}{Feta}
 		\ing{etw.}{Cheddarkäse, gerieben}
 		Die Wraps mit dem Hackfleisch und dem Käse füllen
-	\end{srecipe}
-	\begin{srecipe}{Zucchini - Gnocchi - Auflauf}{4 Portionen}{1 Stunde}
+	\end{recipe}\vfill
+	\addcontentsline{toc}{section}{Zucchini-Gnocchi-Auflauf}
+	\begin{recipe}{Zucchini - Gnocchi - Auflauf}{4 Portionen}{1 Stunde}
 		\ing[4]{}{Tomaten}
 		\ing[2]{}{Zucchini}
 		\ing[2]{}{Zwiebeln}
@@ -209,5 +213,5 @@
 		Den Auflauf für 30 Minuten Backen
 		\ing[viel]{}{Käse, gerieben}
 		Den Auflauf mit Käse bestreuen und weitere 15 Minuten Backen.
-	\end{srecipe}
+	\end{recipe}
 \end{document}
