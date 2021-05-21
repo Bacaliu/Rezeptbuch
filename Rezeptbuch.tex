@@ -1,24 +1,39 @@
 \documentclass[twoside=true, DIV=16, 11pt,a4paper]{scrreprt}
 \usepackage{cuisine}
+\usepackage[clock]{ifsym}
+
 \input{~/Vorlagen/template}
 \input{~/Vorlagen/seitenstil-reprt}
 \chead*{Rezepte}
 
-\renewcommand*{\recipefont}{\slshape\ttfamily}
-\renewcommand*{\recipenumberfont}{\Large\ttfamily\itshape}
-\renewcommand*{\recipetitlefont}{\Large\ttfamily\itshape}
+\renewcommand*{\recipefont}{\ttfamily\slshape}
+\renewcommand*{\recipenumberfont}{\LARGE\ttfamily\itshape}
+\renewcommand*{\recipetitlefont}{\LARGE\ttfamily\itshape}
 %\renewcommand*{\recipeservingsfont}{\bfseries\itshape\ttfamily}
 %\renewcommand*{\recipetimefont}{\bfseries\itshape\ttfamily}
 %\renewcommand*{\recipestepnumberfont}{\itshape\bfseries}
 %\renewcommand*{\recipequantityfont}{\ttfamily}
 %\renewcommand*{\recipeunitfont}{\ttfamily\slshape}
 
+\newcommand{\zeit}[2]{
+	\ifthenelse{\equal{#1}{0}}{
+		\showclock{#1}{#2} #2\,min
+	}{
+		\ifthenelse{\equal{#2}{0}}{
+			\showclock{#1}{#2} #1\,h
+		}{
+			\showclock{#1}{#2} #1h~#2\,min
+		}
+	}
+}
+
+
 \begin{document}
 	\tableofcontents
 	\chapter{Kuchen}
 	\ohead*{Kuchen}
 	\addcontentsline{toc}{section}{Fantawaffeln}
-	\begin{recipe}{Fantawaffeln}{4 Portionen}{15 Minuten}
+	\begin{recipe}{Fantawaffeln}{4 Portionen}{\zeit{0}{15}}
 		\ing[300]{g}{Mehl}
 		\ing[150]{g}{Zucker}
 		\ing[\fr{1}{2}]{TL}{Backpulver}
@@ -32,7 +47,8 @@
 		Schließlich normal im Waffeleisen backen.
 	\end{recipe}\vfill
 	\addcontentsline{toc}{section}{Fantakuchen}
-	\begin{recipe}{Fantakuchen mit Schmand und Früchten}{Backblech}{1 Stunde}
+	\begin{recipe}{Fantakuchen mit Schmand und Früchten}{Backblech}{\zeit{1}{0}}
+		\freeform{\Large Biscuit}
 		\ing[5]{}{Eier}
 		\ing[300]{g}{Zucker}
 		\ing[1]{Pkg.}{Vanillezucker}
@@ -45,6 +61,7 @@
 		Öl und Fanta zugießen und erneut rühren.
 		\newstep
 		Auf dem Backblech für 25 Minuten bei 150\0C backen.
+		\freeform{\Large Creme}
 		\ing[600]{g}{Schlagsahne}
 		\ing[3]{Pkg.}{Vanillezucker}
 		\ing[3]{Pkg.}{Sahnesteif}
@@ -75,7 +92,7 @@
 		Teig ausrollen und ausstechen.
 	\end{recipe}\vfill
 	\addcontentsline{toc}{section}{Brownies}
-	\begin{recipe}{American Brownies}{1 Blech}{40 Minuten}
+	\begin{recipe}{American Brownies}{1 Blech}{\zeit{0}{40}}
 		Den Backofen auf 180\0C vorheizen.
 		\newstep
 		\ing[400]{g}{Zartbitterschokolade}
@@ -100,7 +117,7 @@
 	\chapter{Brot}
 	\ohead*{Brot}
 	\addcontentsline{toc}{section}{Bananenbrot}
-	\begin{recipe}{Bananenbrot}{400g/1 Brot}{45 Minuten}
+	\begin{recipe}{Bananenbrot}{400g/1 Brot}{\zeit{0}{45}}
 		Den Backofen auf 180\0C vorheizen.
 		\ing[150]{g}{Dinkelmehl}
 		\ing[50]{g}{Haferflocken}
@@ -121,7 +138,7 @@
 	\chapter{Kochen}
 	\ohead*{Kochen}
 	\addcontentsline{toc}{section}{Schilli-Con-Carne}
-	\begin{recipe}{Schilli-Con-Carne}{4 Personen}{45 Minuten}
+	\begin{recipe}{Schilli-Con-Carne}{4 Personen}{\zeit{0}{45}}
 		\ing[2]{Tassen}{Reis}
 		\ing[4]{Tassen}{Wasser}
 		\ing[1]{Tl}{Salz}
@@ -148,7 +165,7 @@
 	\end{recipe}
 	\clearpage
 	\addcontentsline{toc}{section}{Kartoffelcurry mit grünen Bohnen}
-	\begin{recipe}{Kartoffelcurry mit grünen Bohnen}{4 Portionen}{45 Minuten}
+	\begin{recipe}{Kartoffelcurry mit grünen Bohnen}{4 Portionen}{\zeit{0}{45}}
 		\ing[1]{Kg}{Kartoffeln}
 		\ing[500]{g}{grüne Bohnen}
 		Kartoffeln schälen, waschen und in dicke Scheiben schneiden. Die Bohnen waschen und in ca. 2.5cm große Stücke schneiden.
@@ -166,7 +183,7 @@
 		Schließlich die Bohnen hinzufügen und für weitere 15 Minuten bei mittlerer Hitze dünsten.
 	\end{recipe}\vfill
 	\addcontentsline{toc}{section}{Burritos}
-	\begin{recipe}{Burritos}{4 Portionen}{1 \fr{1}{4} Stunde}
+	\begin{recipe}{Burritos}{4 Portionen}{\zeit{1}{15}}
 		\ing[1]{TL}{Salz}
 		\ing[1]{TL}{Kreuzkümmel}
 		\ing[1]{TL}{Cayennpfeffer}
@@ -192,7 +209,7 @@
 		Die Wraps mit dem Hackfleisch und dem Käse füllen
 	\end{recipe}\vfill
 	\addcontentsline{toc}{section}{Zucchini-Gnocchi-Auflauf}
-	\begin{recipe}{Zucchini - Gnocchi - Auflauf}{4 Portionen}{1 Stunde}
+	\begin{recipe}{Zucchini - Gnocchi - Auflauf}{4 Portionen}{\zeit{1}{0}}
 		\ing[4]{}{Tomaten}
 		\ing[2]{}{Zucchini}
 		\ing[2]{}{Zwiebeln}
